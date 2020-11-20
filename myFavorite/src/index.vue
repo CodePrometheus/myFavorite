@@ -6,9 +6,9 @@
         <div class="tab">
             <el-table :data="data" border ref="multipleTable" >
                 <el-table-column label="网站名称" prop="wname" width="100px" ></el-table-column>
-                <el-table-column label="网站地址" prop="wurl" width="300px" ></el-table-column>
+                <el-table-column label="网站地址" prop="wurl" width="290px" ></el-table-column>
                 <el-table-column label="点击次数" prop="count" width="70px" ></el-table-column>
-                <el-table-column label="创建时间" prop="ctime" width="250px" ></el-table-column>
+                <el-table-column label="创建时间" prop="ctime" width="300px" ></el-table-column>
                 <el-table-column label="操作" width="80px" >
                     <template slot-scope="scope" width="100px">
                         <el-button type="text" @click="gotourl(scope.row)" >进入</el-button>

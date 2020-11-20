@@ -7,7 +7,7 @@ Created on Tue Jun 30 12:30:14 2020
 
 import pymysql
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 # 数据库连接
 db = pymysql.connect("localhost", "root", "412332", "myfavorite")
@@ -271,6 +271,6 @@ def favorite_count():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=9000)
+    app.run(host='127.0.0.1', port=9000)
     db.close()
     print("bye")

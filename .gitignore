@@ -3,3 +3,7 @@ node_modules/
 dist/
 npm-debug.log
 /myFavorite/.idea/
+rebel.xml
+rebel-remote.xml
+venv\
+mysql.properties
